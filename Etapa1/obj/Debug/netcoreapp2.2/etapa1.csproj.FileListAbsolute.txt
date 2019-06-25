@@ -1,0 +1,11 @@
+C:\RPADev\cursos\fund_csharp\etapa1\bin\Debug\netcoreapp2.2\etapa1.deps.json
+C:\RPADev\cursos\fund_csharp\etapa1\bin\Debug\netcoreapp2.2\etapa1.runtimeconfig.json
+C:\RPADev\cursos\fund_csharp\etapa1\bin\Debug\netcoreapp2.2\etapa1.runtimeconfig.dev.json
+C:\RPADev\cursos\fund_csharp\etapa1\bin\Debug\netcoreapp2.2\etapa1.dll
+C:\RPADev\cursos\fund_csharp\etapa1\bin\Debug\netcoreapp2.2\etapa1.pdb
+C:\RPADev\cursos\fund_csharp\etapa1\obj\Debug\netcoreapp2.2\etapa1.csprojAssemblyReference.cache
+C:\RPADev\cursos\fund_csharp\etapa1\obj\Debug\netcoreapp2.2\etapa1.csproj.CoreCompileInputs.cache
+C:\RPADev\cursos\fund_csharp\etapa1\obj\Debug\netcoreapp2.2\etapa1.AssemblyInfoInputs.cache
+C:\RPADev\cursos\fund_csharp\etapa1\obj\Debug\netcoreapp2.2\etapa1.AssemblyInfo.cs
+C:\RPADev\cursos\fund_csharp\etapa1\obj\Debug\netcoreapp2.2\etapa1.dll
+C:\RPADev\cursos\fund_csharp\etapa1\obj\Debug\netcoreapp2.2\etapa1.pdb

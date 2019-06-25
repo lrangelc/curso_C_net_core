@@ -1,0 +1,11 @@
+C:\RPADev\cursos\fund_csharp\coreschool\bin\Debug\netcoreapp2.2\coreschool.deps.json
+C:\RPADev\cursos\fund_csharp\coreschool\bin\Debug\netcoreapp2.2\coreschool.runtimeconfig.json
+C:\RPADev\cursos\fund_csharp\coreschool\bin\Debug\netcoreapp2.2\coreschool.runtimeconfig.dev.json
+C:\RPADev\cursos\fund_csharp\coreschool\bin\Debug\netcoreapp2.2\coreschool.dll
+C:\RPADev\cursos\fund_csharp\coreschool\bin\Debug\netcoreapp2.2\coreschool.pdb
+C:\RPADev\cursos\fund_csharp\coreschool\obj\Debug\netcoreapp2.2\coreschool.csprojAssemblyReference.cache
+C:\RPADev\cursos\fund_csharp\coreschool\obj\Debug\netcoreapp2.2\coreschool.csproj.CoreCompileInputs.cache
+C:\RPADev\cursos\fund_csharp\coreschool\obj\Debug\netcoreapp2.2\coreschool.AssemblyInfoInputs.cache
+C:\RPADev\cursos\fund_csharp\coreschool\obj\Debug\netcoreapp2.2\coreschool.AssemblyInfo.cs
+C:\RPADev\cursos\fund_csharp\coreschool\obj\Debug\netcoreapp2.2\coreschool.dll
+C:\RPADev\cursos\fund_csharp\coreschool\obj\Debug\netcoreapp2.2\coreschool.pdb
