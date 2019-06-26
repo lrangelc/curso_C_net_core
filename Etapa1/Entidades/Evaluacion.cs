@@ -6,7 +6,7 @@ namespace CoreEscuela.Entidades
     {
         public Asignatura Asignatura { get; set; }
         public Student Alumno { get; set; }
-        public int Nota { get; set; }
+        public double Nota { get; set; }
         public int Numero { get; set; }
 
         public override string ToString() 

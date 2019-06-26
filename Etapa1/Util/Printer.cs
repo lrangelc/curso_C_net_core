@@ -17,6 +17,11 @@ namespace CoreEscuela.Util
             Dibujar_Linea(tam);
         }
 
+        public static void presioneEnter()
+        {
+            Console.WriteLine("Presione ENTER para continuar...");
+        }
+
         public static void Beep(int frequency = 1000,int duration = 500,int cantidad = 1)
         {
             for (int i = 0; i < cantidad; i++)

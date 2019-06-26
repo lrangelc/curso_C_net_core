@@ -166,6 +166,40 @@ namespace Etapa1
             var listaPromedioAlumno = reporteador.GetPromedioAlumnoPorAsignatura();
 
             var listaTopPromedioAlumno = reporteador.GetListaTopPromedio(10);
+
+
+            Printer.Dibujar_Titulo("Captura de Evaluacion por Consola");
+
+            var newEval = new Evaluacion();
+            string nombre,notastr;
+
+            Console.WriteLine("Ingrese el nombre de la evaluacion:");
+            Printer.presioneEnter();
+            nombre = Console.ReadLine();
+
+            if (string.IsNullOrWhiteSpace(nombre))
+            {
+                throw new ArgumentException("El valor del nombre no puede ser vacio.");
+            }
+            else
+            {
+                newEval.Name = nombre.ToLower();
+                Console.WriteLine("El nombre de la evaluacion ha sido ingresado correctamente.");
+            }
+
+            Console.WriteLine("Ingrese la nota de la evaluacion:");
+            Printer.presioneEnter();
+            notastr = Console.ReadLine();
+
+            if (string.IsNullOrWhiteSpace(notastr))
+            {
+                throw new ArgumentException("El valor de la nota no puede ser vacio.");
+            }
+            else
+            {
+                newEval.Nota = float.Parse(notastr);
+                Console.WriteLine("La nota de la evaluacion ha sido ingresada correctamente.");
+            }
         }
 
         private static void SaliendoApp(object sender, EventArgs e)
