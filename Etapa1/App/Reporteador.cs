@@ -90,14 +90,14 @@ namespace CoreEscuela.App
             var resp = new Dictionary<string, IEnumerable<AlumnoPromedio>>();
             var dicPromAlumPorAsignatura = GetPromedioAlumnoPorAsignatura();
 
-            // foreach (var item in dicPromAlumPorAsignatura)
-            // {
-            //     var dummy = (from ap in item.Value
-            //                  orderby ap.promedio descending
-            //                  select ap).Take(x);
+            foreach (var item in dicPromAlumPorAsignatura)
+            {
+                var dummy = (from ap in item.Value
+                             orderby ap.promedio descending
+                             select ap).Take(x);
 
-            //     resp.Add(item.Key, dummy);
-            // }
+                resp.Add(item.Key, dummy);
+            }
 
             return resp;
         }
