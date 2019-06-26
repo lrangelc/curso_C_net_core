@@ -164,6 +164,8 @@ namespace Etapa1
             var listaAsig = reporteador.GetListaAsignaturas();
             var listaEvalXAsig = reporteador.GetDicEvalXAsig();
             var listaPromedioAlumno = reporteador.GetPromedioAlumnoPorAsignatura();
+
+            var listaTopPromedioAlumno = reporteador.GetListaTopPromedio(10);
         }
 
         private static void SaliendoApp(object sender, EventArgs e)
