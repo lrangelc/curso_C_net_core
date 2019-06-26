@@ -61,9 +61,9 @@ namespace CoreEscuela.App
             return dicRta;
         }
 
-        public Dictionary<string,IEnumerable<Object>> GetPromedioAlumnoPorAsignatura()
+        public Dictionary<string,IEnumerable<AlumnoPromedio>> GetPromedioAlumnoPorAsignatura()
         {
-            var rta = new Dictionary<string,IEnumerable<Object>>();
+            var rta = new Dictionary<string,IEnumerable<AlumnoPromedio>>();
             var dicEvalXAsig = GetDicEvalXAsig();
 
             foreach (var asigConEval in dicEvalXAsig)
@@ -83,6 +83,23 @@ namespace CoreEscuela.App
             }
 
             return rta;
+        }
+
+        public Dictionary<string,IEnumerable<AlumnoPromedio>> GetListaTopPromedio(int x)
+        {
+            var resp = new Dictionary<string, IEnumerable<AlumnoPromedio>>();
+            var dicPromAlumPorAsignatura = GetPromedioAlumnoPorAsignatura();
+
+            // foreach (var item in dicPromAlumPorAsignatura)
+            // {
+            //     var dummy = (from ap in item.Value
+            //                  orderby ap.promedio descending
+            //                  select ap).Take(x);
+
+            //     resp.Add(item.Key, dummy);
+            // }
+
+            return resp;
         }
 
     }
