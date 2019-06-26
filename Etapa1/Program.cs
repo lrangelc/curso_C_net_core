@@ -179,7 +179,8 @@ namespace Etapa1
 
             if (string.IsNullOrWhiteSpace(nombre))
             {
-                throw new ArgumentException("El valor del nombre no puede ser vacio.");
+                Printer.Dibujar_Titulo("El valor del nombre no puede ser vacio.");
+                Console.WriteLine("Saliendo del programa...");
             }
             else
             {
@@ -193,12 +194,34 @@ namespace Etapa1
 
             if (string.IsNullOrWhiteSpace(notastr))
             {
-                throw new ArgumentException("El valor de la nota no puede ser vacio.");
+                Printer.Dibujar_Titulo("El valor de la nota no puede ser vacio.");
+                Console.WriteLine("Saliendo del programa...");
             }
             else
             {
-                newEval.Nota = float.Parse(notastr);
-                Console.WriteLine("La nota de la evaluacion ha sido ingresada correctamente.");
+                try
+                {
+                    newEval.Nota = float.Parse(notastr);
+                    if (newEval.Nota<0 || newEval.Nota>5)
+                    {
+                        throw new ArgumentOutOfRangeException("La nota debe de estar entre 0 y 5");
+                    }
+                    Console.WriteLine("La nota de la evaluacion ha sido ingresada correctamente.");
+
+                    Printer.Dibujar_Linea();
+                    Console.WriteLine($"Nombre de la Evaluacion: {newEval.Name} ");
+                    Console.WriteLine($"Nota de la Evaluacion: {newEval.Nota} ");
+                }
+                catch (ArgumentOutOfRangeException arge)
+                {
+                    Printer.Dibujar_Titulo(arge.Message);
+                    Console.WriteLine("Saliendo del programa...");
+                }
+                catch (Exception)
+                {
+                    Printer.Dibujar_Titulo("El valor de la nota no es numero valido.");
+                    Console.WriteLine("Saliendo del programa...");
+                }
             }
         }
 
