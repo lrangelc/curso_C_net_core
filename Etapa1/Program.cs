@@ -192,14 +192,14 @@ namespace Etapa1
             Printer.presioneEnter();
             notastr = Console.ReadLine();
 
-            if (string.IsNullOrWhiteSpace(notastr))
+            try
             {
-                Printer.Dibujar_Titulo("El valor de la nota no puede ser vacio.");
-                Console.WriteLine("Saliendo del programa...");
-            }
-            else
-            {
-                try
+                if (string.IsNullOrWhiteSpace(notastr))
+                {
+                    Printer.Dibujar_Titulo("El valor de la nota no puede ser vacio.");
+                    Console.WriteLine("Saliendo del programa...");
+                }
+                else
                 {
                     newEval.Nota = float.Parse(notastr);
                     if (newEval.Nota<0 || newEval.Nota>5)
@@ -212,17 +212,21 @@ namespace Etapa1
                     Console.WriteLine($"Nombre de la Evaluacion: {newEval.Name} ");
                     Console.WriteLine($"Nota de la Evaluacion: {newEval.Nota} ");
                 }
-                catch (ArgumentOutOfRangeException arge)
-                {
-                    Printer.Dibujar_Titulo(arge.Message);
-                    Console.WriteLine("Saliendo del programa...");
-                }
-                catch (Exception)
-                {
-                    Printer.Dibujar_Titulo("El valor de la nota no es numero valido.");
-                    Console.WriteLine("Saliendo del programa...");
-                }
             }
+            catch (ArgumentOutOfRangeException arge)
+            {
+                Printer.Dibujar_Titulo(arge.Message);
+                Console.WriteLine("Saliendo del programa...");
+            }
+            catch (Exception)
+            {
+                Printer.Dibujar_Titulo("El valor de la nota no es numero valido.");
+                Console.WriteLine("Saliendo del programa...");
+            }
+            finally
+            {
+                Printer.Dibujar_Titulo("FINALLY");
+            }       
         }
 
         private static void SaliendoApp(object sender, EventArgs e)
